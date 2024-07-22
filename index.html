@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TheDream</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Convertisseur de devises</h1>
+      <form method="POST" action="process.php">
+        <div class="area-form">
+          <article class="form-groupe01">
+            <label for="currency_source">Devise source:</label>
+            <select name="currency_source" id="currency_source">
+              <option value="" selected>Devise source</option>
+              <option value="NAD">Dollar namibien</option>
+              <option value="EURO">Euro</option>
+              <option value="USD">Dollar américain</option>
+              <option value="CAD">Dollar canadien</option>
+            </select>
+          </article>
+          <button id="exchange" name="exchange">
+            <img src="asset/swap_horiz_32dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt="swap arrow">
+          </button>
+          <article class="form-groupe02">
+            <label for="currency_target">Devise cible:</label>
+            <select name="currency_target" id="currency_target" style="margin-bottom: 15px;">
+              <option value="" selected>Devise source</option>
+              <option value="NAD">Dollar namibien</option>
+              <option value="EURO">Euro</option>
+              <option value="USD">Dollar américain</option>
+              <option value="CAD">Dollar canadien</option>
+            </select>
+          </article>
+          <article class="form-groupe03"> 
+            <label for="amount">Montant:</label>
+            <input type="number" id="amount" name="amount">
+          </article>
+        </div>
+        <div class="grp-form-conversion">
+          <button type="submit" name="submit" id="sub">Convertir</button>
+          <article id="result">
+          </article>
+        </div>
+      </form>
+      
+    </section>
+  </main>
+  <footer>
+      Powered by <a href="https://www.amdoren.com">Amdoren</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100vw; 
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+  }
+  body main{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 100px; 
+    width: 100%; 
+    height: 100%;
+    background-color:  #304C89;
+  }
+  body main section h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-family: "Dela Gothic One", sans-serif;
+    line-height: 0.9;
+  }
+  body main section{
+    background-color: white;
+    padding: 32px;
+    border-radius: 16px;
+  }
+  .area-form{
+    display: flex;
+    justify-content: space-between;
+  }
+  #exchange{
+    background-color: transparent;
+    border: none;
+  }
+  #exchange img{
+    height: 24px;
+    width: 24px;
+  }
+  body main section form #sub{
+    padding: 10px 16px 10px 16px;
+    margin-right: 8px;
+    background-color: #4F7DE1;
+    border: none;
+    border-radius: 9px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+  .grp-form-conversion{
+    display: flex;
+    align-items: center;
+  }
+  .form-groupe01,.form-groupe02,.form-groupe03{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    /* margin-right: 64px; */
+  }
+  label{
+    margin-bottom: 8px;
+  }
+  select,input{
+    width: 100%;
+    height: 62px;
+    padding: 8px;
+    font-family: "Inter", sans-serif;
+    border-radius: 9px;
+  }
+  body main #result{
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  footer{
+    width:100%; 
+    display: flex; 
+    justify-content: center;
+  }
